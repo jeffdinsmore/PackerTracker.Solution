@@ -8,7 +8,7 @@ namespace PackerTracker.Models
     public string Cost { get; set; }
     public bool Packed { get; set; }
     public int Id { get; }
-    private static List<Packer> ListItems = new List<Packer> {};
+    public static List<Packer> ListItems = new List<Packer> {};
     
     public Packer(string inputName, string inputCost)
     {
@@ -26,7 +26,7 @@ namespace PackerTracker.Models
 
     public static Packer Find(int searchId)
     {
-      return ListItems[searchId-1];
+      return ListItems[(searchId-1)];
     }
     
     public static void ClearAll()

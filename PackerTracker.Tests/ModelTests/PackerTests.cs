@@ -27,5 +27,23 @@ namespace PackerTracker.Tests
       Assert.AreEqual("11", testPacker.Cost);
     }
     
+    [TestMethod]
+    public void GetAll_ReturnAll_NameAndCost()
+    {
+      Packer testPacker = new Packer("pillow", "11");
+
+      List<Packer> result = Packer.GetAll();
+
+      CollectionAssert.AreEqual(Packer.ListItems, result);
+    }
+    [TestMethod]
+    public void FindItem_ReturnItemDescription_ReturnItem()
+    {
+      Packer testPacker = new Packer("pillow", "11");
+      Packer testPacker2 = new Packer("bag", "32");
+
+      Assert.AreEqual(testPacker2, Packer.Find(2));
+    }
+
   }
 }
