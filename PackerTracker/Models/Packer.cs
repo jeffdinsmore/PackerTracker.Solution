@@ -29,5 +29,10 @@ namespace PackerTracker.Models
       return ListItems[searchId-1];
     }
     
+    public static void ClearAll()
+    {
+      ListItems.Clear();
+    }
+
   }
 }

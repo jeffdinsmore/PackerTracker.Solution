@@ -10,9 +10,8 @@
       <p>@Model.Name</p>
       <p>$@Model.Cost</p>
 
-      <form action='/packers' method='post'>
-        <label for='inputPacked'>Packed?</label>
-        <input type='checkbox' name='inputPacked'>
+      <form action='/packers/@Model.Id' method='post'>
+        <button type='submit'>Packed!</button>
       </form>
       
       <p><a href="/packers/new">Add a new list item</a></p>

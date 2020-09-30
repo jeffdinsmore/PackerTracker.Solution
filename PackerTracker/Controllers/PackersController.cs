@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using PackerTracker.Models;
 using System.Collections.Generic;
+using System;
 
 namespace PackerTracker.Controllers
 {
@@ -31,6 +32,14 @@ namespace PackerTracker.Controllers
     {
       Packer findList = Packer.Find(id);
       return View(findList);
+    }
+
+    [HttpPost("/packers/{id}")]
+    public ActionResult Update(int id)
+    {
+      Packer findList = Packer.Find(id);
+      findList.Packed = true;
+      return RedirectToAction("Index");
     }
   }
 }

@@ -27,7 +27,7 @@ _No known bugs at the this time._
 
 _Please check the .csproj files to ensure the proper framework you are running and change if necessary as described in the Setup section_
 
-_Any known issues, please reach out to Jeff Dinsmore by email at hello@jeffdinsmore.com._
+_Any known issues, please reach out to Jeff Dinsmore by email at hello@jeffdinsmore.com and/or wdstwo@live.com._
 
 ## Technologies Used
 

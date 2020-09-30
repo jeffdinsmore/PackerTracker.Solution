@@ -1,17 +1,23 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ProjectName.Models;
+using PackerTracker.Models;
+using System.Collections.Generic;
+using System;
 
-namespace ProjectName.Tests
+namespace PackerTracker.Tests
 {
   [TestClass]
-  public class NameTests
+  public class PackerTests : IDisposable
   {
+    public void Dispose()
+    {
+      Packer.ClearAll();
+    }
+
     [TestMethod]
     public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
     {
-      // testing code will go here
-      Name testName = new Name();
-      Assert.AreEqual(true, testName.NameofMethodWeAreTesting());
+      Packer testPacker = new Packer("pillow", "11");
+      Assert.AreEqual("pillow", testPacker.Name);
     }
   }
 }
