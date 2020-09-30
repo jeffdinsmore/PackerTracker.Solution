@@ -14,7 +14,7 @@ namespace PackerTracker.Tests
     }
 
     [TestMethod]
-    public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
+    public void PackerConstructor_MakesPackerInstance_Packer()
     {
       Packer testPacker = new Packer("pillow", "11");
       Assert.AreEqual("pillow", testPacker.Name);
