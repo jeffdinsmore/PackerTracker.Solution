@@ -19,5 +19,13 @@ namespace PackerTracker.Tests
       Packer testPacker = new Packer("pillow", "11");
       Assert.AreEqual("pillow", testPacker.Name);
     }
+
+    [TestMethod]
+    public void GetCost_ReturnCost_IntCost()
+    {
+      Packer testPacker = new Packer("pillow", "11");
+      Assert.AreEqual("11", testPacker.Cost);
+    }
+    
   }
 }
