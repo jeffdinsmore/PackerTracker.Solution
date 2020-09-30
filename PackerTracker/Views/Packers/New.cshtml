@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>To Do List</title>
+    <title>Packer Tracker</title>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
   </head>
   <body>
     <div class="container">
       <br>
       <form action="/packers" method="post">
-        <label for="inputName">Add a new item</label>
-        <input id=""
-
-        <button type="submit">Submit</button>
+        <label for="inputName">Add name of item</label>
+        <input id="inputName" name="inputName" type="text"><br><br>
+        <label for="inputCost">Add cost in USD</label>
+        <input id="inputCost" name="inputCost" type="number"><br><br>
+        <button class="btn btn-success" type="submit">Submit</button>
       </form>
       
     </div>

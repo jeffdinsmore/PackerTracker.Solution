@@ -6,15 +6,14 @@ namespace PackerTracker.Models
   {
     public string Name { get; set; }
     public string Cost { get; set; }
-    public bool SleepingBag { get; set; }
     public bool Packed { get; set; }
+    public int Id { get; }
     private static List<Packer> ListItems = new List<Packer> {};
     
     public Packer(string inputName, string inputCost)
     {
       Name = inputName;
       Cost = inputCost;
-      SleepingBag = false;
       Packed = false;
       ListItems.Add(this);
       Id = ListItems.Count;

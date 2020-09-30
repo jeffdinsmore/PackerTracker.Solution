@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>To Do List</title>
+    <title>Packer Tracker</title>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
   </head>
   <body>
-    <div class="container">
-      <br>
+    <div class="container"><br>
+      <h2>Item Details:</h2>
+      <p>@Model.Name</p>
+      <p>$@Model.Cost</p>
 
+      <form action='/packers' method='post'>
+        <label for='inputPacked'>Packed?</label>
+        <input type='checkbox' name='inputPacked'>
+      </form>
       
+      <p><a href="/packers/new">Add a new list item</a></p>
+      <p><a href="/packers">View the items list</a></p>
     </div>
   </body>
 </html>

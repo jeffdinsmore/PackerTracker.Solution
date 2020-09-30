@@ -9,14 +9,14 @@ namespace PackerTracker.Controllers
     [HttpGet("/packers")]
     public ActionResult Index()
     {
-      List<Packer> allPackers = PackersController.GetAll();
+      List<Packer> allPackers = Packer.GetAll();
       return View(allPackers);
     }
 
     [HttpGet("/packers/new")]
     public ActionResult New()
     {
-      return view();
+      return View();
     }
 
     [HttpPost("/packers")]
