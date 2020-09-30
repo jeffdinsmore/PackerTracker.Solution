@@ -44,6 +44,5 @@ namespace PackerTracker.Tests
 
       Assert.AreEqual(testPacker2, Packer.Find(2));
     }
-
   }
 }
